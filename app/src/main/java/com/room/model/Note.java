@@ -16,11 +16,8 @@ public class Note implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
-
     private String title;
     private String description;
-
-
     @ColumnInfo(name = "created_at")
     @TypeConverters({TimestampConverter.class})
     private Date createdAt;
